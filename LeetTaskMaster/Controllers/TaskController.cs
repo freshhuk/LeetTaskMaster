@@ -8,7 +8,10 @@ namespace LeetTaskMaster.Controllers
     public class TaskController : ControllerBase
     {
         //метод для вывода всех имеющихся задачь
-        //[HttpGet]   
-
+        [HttpGet]   
+        public IActionResult GetAllTasks()
+        {
+            return Ok();
+        }
     }
 }

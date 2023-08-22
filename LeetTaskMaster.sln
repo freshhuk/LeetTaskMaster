@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetTaskMaster", "LeetTaskMaster\LeetTaskMaster.csproj", "{D34322AE-81EB-4227-9B8E-19F9294031D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetTaskMaster", "LeetTaskMaster\LeetTaskMaster.csproj", "{D34322AE-81EB-4227-9B8E-19F9294031D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetTaskMasterDomain", "LeetTaskMasterDomain\LeetTaskMasterDomain.csproj", "{FFE59FE2-1B37-4B0E-91B1-616FCE9C0D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetTaskMasterInfrastructure", "LeetTaskMasterInfrastructure\LeetTaskMasterInfrastructure.csproj", "{F724DEB4-A9A8-45C4-9DC5-8AEF3D6F0EA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D34322AE-81EB-4227-9B8E-19F9294031D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D34322AE-81EB-4227-9B8E-19F9294031D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D34322AE-81EB-4227-9B8E-19F9294031D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE59FE2-1B37-4B0E-91B1-616FCE9C0D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE59FE2-1B37-4B0E-91B1-616FCE9C0D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE59FE2-1B37-4B0E-91B1-616FCE9C0D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE59FE2-1B37-4B0E-91B1-616FCE9C0D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F724DEB4-A9A8-45C4-9DC5-8AEF3D6F0EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F724DEB4-A9A8-45C4-9DC5-8AEF3D6F0EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F724DEB4-A9A8-45C4-9DC5-8AEF3D6F0EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F724DEB4-A9A8-45C4-9DC5-8AEF3D6F0EA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
