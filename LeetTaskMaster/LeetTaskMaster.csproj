@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LeetTaskMasterDomain\LeetTaskMasterDomain.csproj" />
     <ProjectReference Include="..\LeetTaskMasterInfrastructure\LeetTaskMasterInfrastructure.csproj" />
   </ItemGroup>
 

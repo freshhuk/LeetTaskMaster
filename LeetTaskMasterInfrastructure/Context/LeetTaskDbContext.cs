@@ -9,7 +9,19 @@ namespace LeetTaskMasterInfrastructure.Context
     public class LeetTaskDbContext : DbContext, IDataContext<LeetTask>
     {
         public DbSet<LeetTask> LeetTasks { get; set; }
+        private readonly IConfiguration _configuration;
 
+        public LeetTaskDbContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+        //for configuration sql connection
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+
+        }
+        #region Realization IDataContext
         public async Task AddAsync(LeetTask item)
         {
             await LeetTasks.AddAsync(item);
@@ -50,8 +62,10 @@ namespace LeetTaskMasterInfrastructure.Context
             {
                 // Производим обновление полей существующей задачи
                 Entry(existingTask).CurrentValues.SetValues(item);
-                
+
             }
         }
+        #endregion
+
     }
 }
